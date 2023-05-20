@@ -5,7 +5,6 @@ import { SVGProps } from "react"
 
 export const GrayEllipse = (props: SVGProps<SVGSVGElement>) => {
   const { theme } = useTheme()
-  console.log(theme)
 
   const gray = theme === "dark" ? "#262626" : "#F5F5F5"
 

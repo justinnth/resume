@@ -1,4 +1,5 @@
 import "./globals.css"
+import { Analytics } from "@vercel/analytics/react"
 import { Inter } from "next/font/google"
 
 import { BREllipse } from "@components/atoms/BREllipse"
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
             <Footer />
           </main>
+          <Analytics />
         </Providers>
       </body>
     </html>
