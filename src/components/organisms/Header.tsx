@@ -15,8 +15,8 @@ export const Header = () => {
         <Spotify />
         <p>-</p>
         <div className="flex gap-4">
-          <Link href="uses">Uses</Link>
           <Link href="a-propos">À propos</Link>
+          <Link href="uses">Uses</Link>
         </div>
       </div>
     </nav>

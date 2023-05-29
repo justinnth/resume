@@ -43,7 +43,7 @@ export const CurrentTrack = async ({ promise }: CurrentTrackProps) => {
   return (
     <div>
       <p>
-        {artist} - ${title}
+        {artist} - {title}
       </p>
     </div>
   )

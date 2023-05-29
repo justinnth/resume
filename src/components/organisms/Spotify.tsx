@@ -1,23 +1,17 @@
 import Image from "next/image"
 
-import {
-  CurrentTrack,
-  currentTrackSchema,
-} from "@components/molecules/CurrentTrack"
+import { CurrentTrack, currentTrackSchema } from "@components/molecules/CurrentTrack"
 import { getAccessToken } from "@utils/spotify"
 
 const getCurrentlyPlayingTrack = async (): Promise<CurrentTrack> => {
   const { access_token } = await getAccessToken()
 
-  const response = await fetch(
-    `${process.env.SPOTIFY_API_URL}/me/player/currently-playing`,
-    {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
-      },
-      cache: "no-cache",
+  const response = await fetch(`${process.env.SPOTIFY_API_URL}/me/player/currently-playing`, {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
     },
-  )
+    cache: "no-cache",
+  })
 
   if (response.status === 204 || response.status > 400) {
     return { is_playing: false }

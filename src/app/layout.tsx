@@ -18,10 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`relative bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50  ${inter.className}`}
       >
         <Providers>
-          <GrayEllipse className="absolute top-52" />
-          <BREllipse className="absolute bottom-0 right-0" />
-          <TLEllipse className="absolute left-0 top-0" />
-          <main className="relative z-50 flex  min-h-screen flex-col justify-between bg-gray-50 bg-opacity-40 p-8 backdrop-blur-[250px] dark:bg-gray-900 dark:bg-opacity-40">
+          <main className="relative z-50 flex  min-h-screen flex-col justify-between bg-gray-50 dark:bg-gray-900 dark:bg-opacity-40">
             <Header />
             {children}
             <Footer />
