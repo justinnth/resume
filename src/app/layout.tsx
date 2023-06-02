@@ -1,24 +1,26 @@
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/react"
-import { Inter } from "next/font/google"
+import { Inter, Lobster } from "next/font/google"
 
-import { BREllipse } from "@components/atoms/BREllipse"
-import { GrayEllipse } from "@components/atoms/GrayEllipse"
-import { TLEllipse } from "@components/atoms/TLEllipse"
 import { Footer } from "@components/organisms/Footer"
 import { Header } from "@components/organisms/Header"
 import { Providers } from "@utils/providers"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" })
+const lobster = Lobster({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lobster",
+  weight: "400",
+})
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`relative bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50  ${inter.className}`}
-      >
+    <html lang="fr" className={`${inter.variable} ${lobster.variable}`} suppressHydrationWarning>
+      <body>
         <Providers>
-          <main className="relative z-50 flex  min-h-screen flex-col justify-between bg-gray-50 dark:bg-gray-900 dark:bg-opacity-40">
+          <main className="flex w-full flex-col p-6">
+            <div className="gradient absolute left-[-50px] top-[-100px] bg-gradient-to-t from-gray-50 to-purple-400 dark:from-gray-900 dark:to-purple-600"></div>
             <Header />
             {children}
             <Footer />

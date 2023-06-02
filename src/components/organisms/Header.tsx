@@ -1,13 +1,12 @@
 import Link from "next/link"
 
-import { Logo } from "@components/atoms/Logo"
 import { Spotify } from "@components/organisms/Spotify"
 
 export const Header = () => {
   return (
-    <nav className="z-10 flex justify-between">
-      <Link href="">
-        <Logo />
+    <nav className="container z-10 mx-auto flex items-center justify-between">
+      <Link className="font-lobster text-2xl" href="/">
+        Justin.
       </Link>
 
       <div className="flex gap-4">
@@ -15,7 +14,6 @@ export const Header = () => {
         <Spotify />
         <p>-</p>
         <div className="flex gap-4">
-          <Link href="a-propos">À propos</Link>
           <Link href="uses">Uses</Link>
         </div>
       </div>
