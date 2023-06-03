@@ -1,14 +1,20 @@
 "use client"
 
-import Link from "next/link"
+import { useTheme } from "next-themes"
+import { useEffect } from "react"
+
+import { TypographyMuted } from "@components/atoms/typography/TypographyMuted"
 
 export const Footer = () => {
+  const { setTheme, systemTheme } = useTheme()
+
+  useEffect(() => {
+    setTheme(systemTheme ?? "light")
+  }, [systemTheme])
+
   return (
-    <div
-      className="items -center
-    z-10 flex justify-end gap-4"
-    >
-      <Link href="uses">EN</Link>
+    <div className="container z-10 mx-auto flex items-center justify-between gap-4">
+      <TypographyMuted>2023 - Justin North</TypographyMuted>
     </div>
   )
 }

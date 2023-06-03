@@ -17,7 +17,7 @@ const lobster = Lobster({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${inter.variable} ${lobster.variable}`} suppressHydrationWarning>
-      <body>
+      <body className="bg-background text-foreground">
         <Providers>
           <main className="flex w-full flex-col p-6">
             <div className="gradient absolute left-[-50px] top-[-100px] bg-gradient-to-t from-gray-50 to-purple-400 dark:from-gray-900 dark:to-purple-600"></div>

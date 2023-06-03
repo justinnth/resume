@@ -11,6 +11,7 @@ const getCurrentlyPlayingTrack = async (): Promise<CurrentTrack> => {
       Authorization: `Bearer ${access_token}`,
     },
     cache: "no-cache",
+    next: { revalidate: 30 },
   })
 
   if (response.status === 204 || response.status > 400) {
