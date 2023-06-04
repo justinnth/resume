@@ -1,11 +1,17 @@
 import Link from "next/link"
 
+import { ChangeLanguage } from "@components/atoms/ChangeLanguage"
 import { Spotify } from "@components/organisms/Spotify"
+import { Locale } from "@utils/locale"
 
-export const Header = () => {
+type HeaderProps = {
+  lang: Locale
+}
+
+export const Header = ({ lang }: HeaderProps) => {
   return (
     <nav className="container z-10 mx-auto flex items-center justify-between">
-      <Link className="font-lobster text-2xl" href="/">
+      <Link className="font-lobster text-2xl" href={`/${lang}`}>
         Justin.
       </Link>
 
@@ -14,8 +20,10 @@ export const Header = () => {
         <Spotify />
         <p>-</p>
         <div className="flex gap-4">
-          <Link href="uses">Uses</Link>
+          <Link href={`/${lang}/uses`}>Uses</Link>
         </div>
+        <p>·</p>
+        <ChangeLanguage lang={lang} />
       </div>
     </nav>
   )
