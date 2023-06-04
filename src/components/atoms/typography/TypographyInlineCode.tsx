@@ -10,7 +10,7 @@ export const TypographyInlineCode = ({
   ...props
 }: TypographyInlineCodeProps) => (
   <code
-    className={`bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold ${className}`}
+    className={`relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold dark:bg-mutedDark ${className}`}
     {...props}
   >
     {children}

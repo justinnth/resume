@@ -1,7 +1,6 @@
 import { ReactNode } from "react"
 
 import { TypographyMuted } from "@components/atoms/typography/TypographyMuted"
-import { TypographyP } from "@components/atoms/typography/TypographyP"
 
 type FormationProps = {
   date: string

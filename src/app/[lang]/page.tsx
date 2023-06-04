@@ -26,17 +26,25 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             <span className="font-lobster"> Justin North</span>.
           </TypographyH1>
           <TypographyP>{dictionary.home.header.job}</TypographyP>
-          <div className="mb-4 flex gap-1 text-sm text-muted-foreground">
+          <div className="mb-4 flex gap-1 text-sm text-muted-foreground dark:text-mutedDark-foreground">
             <a href="mailto:justin_n@hotmail.fr">justin_n@hotmail.fr</a>
             <p>-</p>
             <a href="tel:+33646094431">+33 6 46 09 44 31</a>
           </div>
           <div className="flex gap-2 transition-colors">
             <a href="https://github.com/justinnth">
-              <GitHubLogoIcon width={24} height={24} className="hover:text-purple-900" />
+              <GitHubLogoIcon
+                width={24}
+                height={24}
+                className="hover:text-purple-900 dark:hover:text-purple-400"
+              />
             </a>
             <a href="https://www.linkedin.com/in/justin-north/">
-              <LinkedInLogoIcon width={24} height={24} className="hover:text-purple-900" />
+              <LinkedInLogoIcon
+                width={24}
+                height={24}
+                className="hover:text-purple-900 dark:hover:text-purple-400"
+              />
             </a>
           </div>
         </div>

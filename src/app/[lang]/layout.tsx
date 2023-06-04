@@ -1,6 +1,7 @@
 import "../globals.css"
 import { Analytics } from "@vercel/analytics/react"
 import { Inter, Lobster } from "next/font/google"
+import Script from "next/script"
 
 import { Footer } from "@components/organisms/Footer"
 import { Header } from "@components/organisms/Header"
@@ -32,7 +33,7 @@ export default function RootLayout({
       className={`${inter.variable} ${lobster.variable}`}
       suppressHydrationWarning
     >
-      <body className="bg-background text-foreground">
+      <body className="bg-background text-foreground dark:bg-backgroundDark dark:text-foregroundDark">
         <Providers>
           <main className="flex w-full flex-col p-6">
             <div className="gradient absolute left-[-50px] top-[-100px] bg-gradient-to-t from-gray-50 to-purple-400 dark:from-gray-900 dark:to-purple-600"></div>
@@ -42,6 +43,12 @@ export default function RootLayout({
           </main>
           <Analytics />
         </Providers>
+
+        {/* Tell the browser to never restore the scroll position on load */}
+        <Script
+          id="scroll-restoration"
+          dangerouslySetInnerHTML={{ __html: `history.scrollRestoration = "manual"` }}
+        />
       </body>
     </html>
   )

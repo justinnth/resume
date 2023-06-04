@@ -5,7 +5,10 @@ type TypographyMutedProps = {
 } & HTMLAttributes<HTMLParagraphElement>
 
 export const TypographyMuted = ({ children, className, ...props }: TypographyMutedProps) => (
-  <p className={`text-sm text-muted-foreground ${className}`} {...props}>
+  <p
+    className={`text-sm text-muted-foreground dark:text-mutedDark-foreground ${className}`}
+    {...props}
+  >
     {children}
   </p>
 )
