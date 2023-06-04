@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 import { CurrentTrack, currentTrackSchema } from "@components/molecules/CurrentTrack"
+import spotifyLogo from "@public/spotify.png"
 import { getAccessToken } from "@utils/spotify"
 
 const getCurrentlyPlayingTrack = async (): Promise<CurrentTrack> => {
@@ -10,7 +11,6 @@ const getCurrentlyPlayingTrack = async (): Promise<CurrentTrack> => {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
-    cache: "no-cache",
     next: { revalidate: 30 },
   })
 
@@ -31,7 +31,7 @@ export const Spotify = async () => {
     <div className="flex gap-2">
       {/* @ts-expect-error Async Server Component */}
       <CurrentTrack promise={song} />
-      <Image src="/spotify.png" width={24} height={24} alt="spotify logo" />
+      <Image src={spotifyLogo} width={24} height={24} alt="spotify logo" placeholder="blur" />
     </div>
   )
 }

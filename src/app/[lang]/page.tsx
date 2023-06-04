@@ -6,6 +6,7 @@ import { TypographyH3 } from "@components/atoms/typography/TypographyH3"
 import { TypographyInlineCode } from "@components/atoms/typography/TypographyInlineCode"
 import { TypographyP } from "@components/atoms/typography/TypographyP"
 import { Formation } from "@components/molecules/Formation"
+import justin from "@public/justin.jpeg"
 import { getDictionary } from "@utils/get-dictionaries"
 import { Locale } from "@utils/locale"
 
@@ -48,13 +49,13 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
             </a>
           </div>
         </div>
-        <div className="overflow-hidden rounded-3xl bg-background">
+        <div className="overflow-hidden rounded-3xl bg-background dark:bg-backgroundDark">
           <Image
             className="mix-blend-luminosity"
-            src="/justin.jpeg"
+            src={justin}
             alt="justin"
             width={300}
-            height={400}
+            placeholder="blur"
           />
         </div>
       </div>
