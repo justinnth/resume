@@ -1,0 +1,79 @@
+{
+  "home": {
+    "header": {
+      "hey": "Hey ! I'm",
+      "job": "I'm currently a Fullstack Software Engineer @ Lonestone."
+    },
+    "about": {
+      "title": "About me",
+      "contentDev": "Fullstack Software Engineer at Lonestone, I acquired these skills thanks to my experience in company as well as my background, after a DUT, a Bachelor's degree in Computer Science and a Master's degree in web development.",
+      "contentExtra": "Outside of web development, I am also passionate about cinema, photography and music, I don't practice any music but I can't do without listening to some every day. I've also been skateboarding for more than 10 years."
+    },
+    "professional": {
+      "title": "Professional experiences",
+      "experiences": {
+        "lonestone": {
+          "date": "2022 - Today",
+          "title": "Fullstack Software Engineer",
+          "school": "Lonestone, Nantes",
+          "description": "Fullstack Software Engineer specialized in Typescript, React, Nextjs and NestJS for the backend. I worked on projects with the following technologies:",
+          "classicPages": "or the classic pages directory,",
+          "forStyles": "for the styles."
+        },
+        "goliath": {
+          "date": "2019 - 2021",
+          "title": "Front-end Software Engineer",
+          "school": "Studio Goliath, Nantes",
+          "description": "Front-end Software Engineer using NuxtJS with Wordpress as a headless CMS. I worked with the following technologies:",
+          "nuxt": "for the front-end and the connection with Wordpress,",
+          "headless": "as a headless CMS,",
+          "rest": "REST API"
+        },
+        "ecritel": {
+          "date": "2018-2019",
+          "title": "Fullstack Software Engineer",
+          "school": "Ecritel, Nantes",
+          "description": "Fullstack Software Engineer on VueJS with Python and its Django framework for the backend.",
+          "front": "for the front-end,",
+          "chat": "to create a chat bot."
+        }
+      }
+    },
+    "formations": {
+      "title": "School",
+      "formations": {
+        "master": {
+          "date": "2019 - 2021",
+          "title": "Master's degree in web development",
+          "school": "ECV Digital, Nantes",
+          "description1": "I obtained my Master's degree with honors. During my end of studies project, I developed an application to learn algorithmics in a fun way. I developed a",
+          "description2": "and studied the following technologies:"
+        },
+        "licence": {
+          "date": "2019",
+          "title": "Bachelor's degree in Computer Science",
+          "school": "Université de La Rochelle, La Rochelle"
+        },
+        "dut": {
+          "date": "2017",
+          "title": "DUT in Computer Science",
+          "school": "IUT de La Rochelle, La Rochelle"
+        }
+      }
+    }
+  },
+  "uses": {
+    "description": "Tools and technologies I use.",
+    "pc": "PC / Desk",
+    "screen": "Dell 27” 1440p monitor",
+    "desk": "Songmics standing desk",
+    "shell": "Shell",
+    "software": "Software",
+    "other": "Other"
+  },
+  "andThe": "and the",
+  "withThe": "with the",
+  "with": "with",
+  "createdBy": "created by",
+  "toCreateAPIS": "to create APIs,"
+}

@@ -1,0 +1,79 @@
+{
+  "home": {
+    "header": {
+      "hey": "Salut ! Moi c’est",
+      "job": "Je suis développeur Fullstack chez Lonestone."
+    },
+    "about": {
+      "title": "À propos de moi",
+      "contentDev": "Développeur fullstack chez Lonestone, j’ai pu acquérir ces compétences grâce à mon expérience en entreprise ainsi qu’à mon parcours, à la suite d’un IUT, d’une licence en Informatique et d’un Master en développement web.",
+      "contentExtra": "En dehors du développement web, je suis également passionné de cinéma, de photographie et de musique, je n'en pratique pas mais je ne peux pas me passer d'en écouter chaque jour. Je fais aussi du skateboard depuis plus de 10 ans."
+    },
+    "professional": {
+      "title": "Expériences professionnelles",
+      "experiences": {
+        "lonestone": {
+          "date": "2022 - Aujourd'hui",
+          "title": "Développeur fullstack",
+          "school": "Lonestone, Nantes",
+          "description": "Développeur fullstack spécialisé en Typescript, React, Nextjs et NestJS pour le backend. J'ai travaillé sur des projets avec les technologies suivantes:",
+          "classicPages": "ou le dossier pages classique,",
+          "forStyles": "pour les styles."
+        },
+        "goliath": {
+          "date": "2019 - 2021",
+          "title": "Développeur front-end",
+          "school": "Studio Goliath, Nantes",
+          "description": "Développeur front-end utilisant NuxtJS avec Wordpress en tant que CMS headless. J'ai travaillé avec les technologies suivantes:",
+          "nuxt": "pour le front-end et la connextion avec Wordpress,",
+          "headless": "en tant que CMS headless,",
+          "rest": "API REST"
+        },
+        "ecritel": {
+          "date": "2018-2019",
+          "title": "Développeur fullstack",
+          "school": "Ecritel, Nantes",
+          "description": "Développeur fullstack sur VueJS avec Python et son framework Django pour le backend.",
+          "front": "pour le front-end,",
+          "chat": "pour la création d'un chat."
+        }
+      }
+    },
+    "formations": {
+      "title": "Formations",
+      "formations": {
+        "master": {
+          "date": "2019 - 2021",
+          "title": "Mastère Développement Web",
+          "school": "ECV Digital, Nantes",
+          "description1": "J'ai obtenu mon diplôme de Mastère avec la mention Bien. Lors de mon projet de fin d'études, j'ai développé une application d'apprentissage de l'algorithmie de manière ludique. J'ai développé une",
+          "description2": "et étudié les technologies suivantes:"
+        },
+        "licence": {
+          "date": "2019",
+          "title": "Licence Informatique",
+          "school": "Université de La Rochelle, La Rochelle"
+        },
+        "dut": {
+          "date": "2017",
+          "title": "DUT Informatique",
+          "school": "IUT de La Rochelle, La Rochelle"
+        }
+      }
+    }
+  },
+  "uses": {
+    "description": "Liste des outils et technologies que j’utilise.",
+    "pc": "PC / Bureau",
+    "screen": "Écran Dell 27” 1440p",
+    "desk": "Bureau assis/debout Songmics",
+    "shell": "Terminal",
+    "software": "Logiciels",
+    "other": "Autres"
+  },
+  "andThe": "et les",
+  "withThe": "avec le",
+  "with": "avec",
+  "createdBy": "créé par",
+  "toCreateAPIS": "pour créer des APIs,"
+}
