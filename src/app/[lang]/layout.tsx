@@ -36,7 +36,7 @@ export default function RootLayout({
       <body className="bg-background text-foreground dark:bg-backgroundDark dark:text-foregroundDark">
         <Providers>
           <main className="flex w-full flex-col p-6">
-            <div className="gradient absolute left-[-50px] top-[-100px] bg-gradient-to-t from-gray-50 to-purple-400 dark:from-gray-900 dark:to-purple-600"></div>
+            <div className="gradient absolute left-[-20px] top-[-50px] bg-gradient-to-t from-gray-50 to-purple-400 dark:from-gray-900 dark:to-purple-600 md:left-[-50px] md:top-[-100px]"></div>
             <Header lang={params.lang} />
             {children}
             <Footer />

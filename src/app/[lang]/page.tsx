@@ -19,9 +19,9 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   const dictionary = await getDictionary(lang)
 
   return (
-    <div className="container z-10 mx-auto my-32">
-      <div className="mb-56 flex items-center">
-        <div className="mr-40">
+    <div className="container z-10 mx-auto my-16 md:my-32">
+      <div className=" mb-24 flex flex-col-reverse items-center md:mb-56 md:flex-row">
+        <div className="mt-20 md:mr-40">
           <TypographyH1 className="mb-3">
             {dictionary.home.header.hey}
             <span className="font-lobster"> Justin North</span>.
